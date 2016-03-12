@@ -1,2 +1,1 @@
-# Icey
-This is Icey 
+Calculator2增加了单利计算本息和复利计算本金的功能，心塞的是一直传不上github
