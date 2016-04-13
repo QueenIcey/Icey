@@ -13,18 +13,18 @@ class MyFrame extends JFrame {
 	private JPanel c;
 	private int index = 0;  
 	private static double benjin, lilv, nianxian, zhongzhi, dingtou, huankuan,daikuan;
-	JLabel l1 = new JLabel("¼ÆËãÀàĞÍ:");
-	JLabel l2 = new JLabel("±¾½ğ£¨Ôª£©:");
-	JLabel l3 = new JLabel("ÄêÀûÂÊ£¨%£©:");
-	JLabel l4 = new JLabel("ÄêÏŞ£¨Äê£©:");
-	JLabel l5 = new JLabel("ÖÕÖµ£¨Ôª£©:");
+	JLabel l1 = new JLabel("è®¡ç®—ç±»å‹:");
+	JLabel l2 = new JLabel("æœ¬é‡‘ï¼ˆå…ƒï¼‰:");
+	JLabel l3 = new JLabel("å¹´åˆ©ç‡ï¼ˆ%ï¼‰:");
+	JLabel l4 = new JLabel("å¹´é™ï¼ˆå¹´ï¼‰:");
+	JLabel l5 = new JLabel("ç»ˆå€¼ï¼ˆå…ƒï¼‰:");
 	JTextField t2 = new JTextField(10);
 	JTextField t3 = new JTextField("0.03",10);
 	JTextField t4 = new JTextField(10);
 	JTextField t5 = new JTextField(10);
 
-	JButton b1 = new JButton("¼ÆËã");
-	String[] selectedText = { "¸´Àû¼ÆËã", "µ¥Àû¼ÆËã", "±¾½ğ¼ÆËã", "ÀûÂÊ¼ÆËã", "ÄêÏŞ¼ÆËã","ÔÂµÈ¶î»¹¿î¼ÆËã" };
+	JButton b1 = new JButton("è®¡ç®—");
+	String[] selectedText = { "å¤åˆ©è®¡ç®—", "å•åˆ©è®¡ç®—", "æœ¬é‡‘è®¡ç®—", "åˆ©ç‡è®¡ç®—", "å¹´é™è®¡ç®—","æœˆç­‰é¢è¿˜æ¬¾è®¡ç®—" };
 	JComboBox c1 = new JComboBox(selectedText);
 	
 	JPanel p1 = new JPanel();
@@ -36,7 +36,7 @@ class MyFrame extends JFrame {
 	
 	MyFrame() {
 		this.setSize(320,400);
-		this.setTitle("¸´Àû¼ÆËãÆ÷");
+		this.setTitle("å¤åˆ©è®¡ç®—å™¨");
 		Container c = this.getContentPane();
 		GridLayout f1 = new GridLayout(6, 2, 0, 5);
 		GridLayout f2 = new GridLayout(1, 1, 5, 5);
@@ -64,53 +64,53 @@ class MyFrame extends JFrame {
 		
 		b1.setForeground(Color.BLUE);
 		b1.setBackground(Color.PINK);
-		b1.setFont(new Font("Ó×Ô²", Font.BOLD, 15));
+		b1.setFont(new Font("å¹¼åœ†", Font.BOLD, 15));
 		c1.setBackground(Color.PINK);
 		l1.setForeground(Color.MAGENTA);
-		l1.setFont(new Font("Ó×Ô²", Font.BOLD, 16));
+		l1.setFont(new Font("å¹¼åœ†", Font.BOLD, 16));
 		l2.setForeground(Color.PINK);
-		l2.setFont(new Font("Ó×Ô²", Font.BOLD, 15));
+		l2.setFont(new Font("å¹¼åœ†", Font.BOLD, 15));
 		l3.setForeground(Color.PINK);
-		l3.setFont(new Font("Ó×Ô²", Font.BOLD, 15));
+		l3.setFont(new Font("å¹¼åœ†", Font.BOLD, 15));
 		l4.setForeground(Color.PINK);
-		l4.setFont(new Font("Ó×Ô²", Font.BOLD, 15));
+		l4.setFont(new Font("å¹¼åœ†", Font.BOLD, 15));
 		l5.setForeground(Color.PINK);
-		l5.setFont(new Font("Ó×Ô²", Font.BOLD, 15));
+		l5.setFont(new Font("å¹¼åœ†", Font.BOLD, 15));
 		t2.setForeground(Color.YELLOW);
-		t2.setFont(new Font("Ó×Ô²", Font.BOLD, 14));
+		t2.setFont(new Font("å¹¼åœ†", Font.BOLD, 14));
 		t3.setForeground(Color.CYAN);
-		t3.setFont(new Font("Ó×Ô²", Font.BOLD, 14));
+		t3.setFont(new Font("å¹¼åœ†", Font.BOLD, 14));
 		t4.setForeground(Color.GREEN);
-		t4.setFont(new Font("Ó×Ô²", Font.BOLD, 14));
+		t4.setFont(new Font("å¹¼åœ†", Font.BOLD, 14));
 		t5.setForeground(Color.RED);
-		t5.setFont(new Font("Ó×Ô²", Font.BOLD, 14));
+		t5.setFont(new Font("å¹¼åœ†", Font.BOLD, 14));
 		
-		this.setIconImage(Toolkit.getDefaultToolkit().createImage("we.jpg"));//Ìí¼Ó´°ÌåÍ¼±ê
+		this.setIconImage(Toolkit.getDefaultToolkit().createImage("top.jpg"));//æ·»åŠ çª—ä½“å›¾æ ‡
 
-		String path = "blue.jpg";// Ìí¼Ó±³¾°Í¼Æ¬  
-	    ImageIcon background = new ImageIcon(path);// °Ñ±³¾°Í¼Æ¬ÏÔÊ¾ÔÚÒ»¸ö±êÇ©ÀïÃæ  
-	    JLabel label = new JLabel(background);// °Ñ±êÇ©µÄ´óĞ¡Î»ÖÃÉèÖÃÎªÍ¼Æ¬¸ÕºÃÌî³äÕû¸öÃæ°å  
-	    label.setBounds(0, 0, this.getWidth(), this.getHeight());// °ÑÄÚÈİ´°¸ñ×ª»¯ÎªJPanel£¬·ñÔò²»ÄÜÓÃ·½·¨setOpaque()À´Ê¹ÄÚÈİ´°¸ñÍ¸Ã÷  
+		String path = "under.jpg";// æ·»åŠ èƒŒæ™¯å›¾ç‰‡  
+	    ImageIcon background = new ImageIcon(path);// æŠŠèƒŒæ™¯å›¾ç‰‡æ˜¾ç¤ºåœ¨ä¸€ä¸ªæ ‡ç­¾é‡Œé¢  
+	    JLabel label = new JLabel(background);// æŠŠæ ‡ç­¾çš„å¤§å°ä½ç½®è®¾ç½®ä¸ºå›¾ç‰‡åˆšå¥½å¡«å……æ•´ä¸ªé¢æ¿  
+	    label.setBounds(0, 0, this.getWidth(), this.getHeight());// æŠŠå†…å®¹çª—æ ¼è½¬åŒ–ä¸ºJPanelï¼Œå¦åˆ™ä¸èƒ½ç”¨æ–¹æ³•setOpaque()æ¥ä½¿å†…å®¹çª—æ ¼é€æ˜  
 	    JPanel imagePanel = (JPanel) this.getContentPane();  
-	    imagePanel.setOpaque(false);// °Ñ±³¾°Í¼Æ¬Ìí¼Óµ½·Ö²ã´°¸ñµÄ×îµ×²ã×÷Îª±³¾°  
-	        //×¢ÒâÕâÀï£¬½«ÄÚÈİÃæ°åÉèÎªÍ¸Ã÷¡£ÕâÑùLayeredPaneÃæ°åÖĞµÄ±³¾°²ÅÄÜÏÔÊ¾³öÀ´¡£
-	       //jframe´°¿ÚµÄ×é³É²¿·Ö£¬×îµ×²ãÊÇjrootpaneÃæ°å¡£
-	      //jframeµÄ×é³ÉÈçÏÂ£ºjrootpaneÖĞ°üº¬glasspaneºÍlayeredpaneÁ½¸öÃæ°å¡£¶ølayeredpaneÃæ°å°üº¬contentpaneºÍjmenubar¡£
-	     //ÔÚjframeÉÏÌí¼Ó×é¼ş£¬ÍùÍùÊÇÌí¼ÓÔÚcontentpaneÖĞ¡£¡£µ«ÊÇÔÚcontentpaneµÄÏÂÃæ»¹ÓĞÁ½²ãÃæ°å£¬ÄÇ¾ÍÊÇlayeredpaneºÍjrootpane¡£
-	    this.getLayeredPane().add(label, new Integer(Integer.MIN_VALUE));//ÉèÖÃ¿É¼û
+	    imagePanel.setOpaque(false);// æŠŠèƒŒæ™¯å›¾ç‰‡æ·»åŠ åˆ°åˆ†å±‚çª—æ ¼çš„æœ€åº•å±‚ä½œä¸ºèƒŒæ™¯  
+	        //æ³¨æ„è¿™é‡Œï¼Œå°†å†…å®¹é¢æ¿è®¾ä¸ºé€æ˜ã€‚è¿™æ ·LayeredPaneé¢æ¿ä¸­çš„èƒŒæ™¯æ‰èƒ½æ˜¾ç¤ºå‡ºæ¥ã€‚
+	       //jframeçª—å£çš„ç»„æˆéƒ¨åˆ†ï¼Œæœ€åº•å±‚æ˜¯jrootpaneé¢æ¿ã€‚
+	      //jframeçš„ç»„æˆå¦‚ä¸‹ï¼šjrootpaneä¸­åŒ…å«glasspaneå’Œlayeredpaneä¸¤ä¸ªé¢æ¿ã€‚è€Œlayeredpaneé¢æ¿åŒ…å«contentpaneå’Œjmenubarã€‚
+	     //åœ¨jframeä¸Šæ·»åŠ ç»„ä»¶ï¼Œå¾€å¾€æ˜¯æ·»åŠ åœ¨contentpaneä¸­ã€‚ã€‚ä½†æ˜¯åœ¨contentpaneçš„ä¸‹é¢è¿˜æœ‰ä¸¤å±‚é¢æ¿ï¼Œé‚£å°±æ˜¯layeredpaneå’Œjrootpaneã€‚
+	    this.getLayeredPane().add(label, new Integer(Integer.MIN_VALUE));//è®¾ç½®å¯è§
 
-	    p1.setOpaque(false);//p1Ãæ°åÍ¸Ã÷»¯¿ÉÏÔÊ¾×îµ×²ãÃæ°åÍ¼Æ¬
-	    p2.setOpaque(false);//p2Ãæ°åÍ¸Ã÷»¯
-	    p3.setOpaque(false);//p3Ãæ°åÍ¸Ã÷»¯
-	    l1.setOpaque(false);//l1Ãæ°åÍ¸Ã÷»¯
-	    l2.setOpaque(false);//l2Ãæ°åÍ¸Ã÷»¯
-	    l3.setOpaque(false);//l3Ãæ°åÍ¸Ã÷»¯
-	    l4.setOpaque(false);//l4Ãæ°åÍ¸Ã÷»¯
-	    l5.setOpaque(false);//l5Ãæ°åÍ¸Ã÷»¯
-	    t2.setOpaque(false);//t2Ãæ°åÍ¸Ã÷»¯
-	    t3.setOpaque(false);//t3Ãæ°åÍ¸Ã÷»¯
-	    t4.setOpaque(false);//t4Ãæ°åÍ¸Ã÷»¯
-	    t5.setOpaque(false);//t5Ãæ°åÍ¸Ã÷»¯
+	    p1.setOpaque(false);//p1é¢æ¿é€æ˜åŒ–å¯æ˜¾ç¤ºæœ€åº•å±‚é¢æ¿å›¾ç‰‡
+	    p2.setOpaque(false);//p2é¢æ¿é€æ˜åŒ–
+	    p3.setOpaque(false);//p3é¢æ¿é€æ˜åŒ–
+	    l1.setOpaque(false);//l1é¢æ¿é€æ˜åŒ–
+	    l2.setOpaque(false);//l2é¢æ¿é€æ˜åŒ–
+	    l3.setOpaque(false);//l3é¢æ¿é€æ˜åŒ–
+	    l4.setOpaque(false);//l4é¢æ¿é€æ˜åŒ–
+	    l5.setOpaque(false);//l5é¢æ¿é€æ˜åŒ–
+	    t2.setOpaque(false);//t2é¢æ¿é€æ˜åŒ–
+	    t3.setOpaque(false);//t3é¢æ¿é€æ˜åŒ–
+	    t4.setOpaque(false);//t4é¢æ¿é€æ˜åŒ–
+	    t5.setOpaque(false);//t5é¢æ¿é€æ˜åŒ–
 	    
 
 
@@ -118,7 +118,7 @@ class MyFrame extends JFrame {
 		c.add(new JScrollPane(resultList)); 
 		resultList.setForeground(Color.BLUE);
 		resultList.setBackground(Color.PINK);
-		listModel.addElement( "¶¯Ì¬×Ê½ğÏÖÖµÏÔÊ¾ÖĞ...");
+		listModel.addElement( "åŠ¨æ€èµ„é‡‘ç°å€¼æ˜¾ç¤ºä¸­...");
 		
 		this.setVisible(true);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -129,32 +129,32 @@ class MyFrame extends JFrame {
 	                if(index == 0){
 	                    zhongzhi = fulicalcutor();
 	                    t5.setText(Double.toString(zhongzhi));
-	                    listModel.addElement("¸´Àû¼ÆËã£º"+Double.toString(zhongzhi));
+	                    listModel.addElement("å¤åˆ©è®¡ç®—ï¼š"+Double.toString(zhongzhi));
 	                    t5.setEnabled(true);
 	                }else if(index == 1){
 	                    zhongzhi = danlicalcutor();
 	                    t5.setText(Double.toString(zhongzhi));
-	                    listModel.addElement("µ¥Àû¼ÆËã£º"+Double.toString(zhongzhi));
+	                    listModel.addElement("å•åˆ©è®¡ç®—ï¼š"+Double.toString(zhongzhi));
 	                    t5.setEnabled(true);
 	                }else if(index == 2){
 	                    benjin = benjincalcutor();
 	                    t2.setText(Double.toString(benjin));
-	                    listModel.addElement("±¾½ğ¼ÆËã£º"+Double.toString(benjin));
+	                    listModel.addElement("æœ¬é‡‘è®¡ç®—ï¼š"+Double.toString(benjin));
 	                    t2.setEnabled(true);
 	                }else if(index == 3){
 	                    lilv = lilvcalcutor();
 	                    t3.setText(Double.toString(lilv));
-	                    listModel.addElement("ÀûÂÊ¼ÆËã£º"+Double.toString(lilv));
+	                    listModel.addElement("åˆ©ç‡è®¡ç®—ï¼š"+Double.toString(lilv));
 	                    t3.setEnabled(true);    
 	                }else if(index == 4){
 	                    nianxian = nianxiancalcutor();
 	                    t4.setText(Double.toString(nianxian));
-	                    listModel.addElement("ÄêÏŞ¼ÆËã£º"+Double.toString(nianxian));
+	                    listModel.addElement("å¹´é™è®¡ç®—ï¼š"+Double.toString(nianxian));
 	                    t4.setEnabled(true);    
 	                }else if(index == 5){
 	                    huankuan = yuehuankuanejisuan();
 	                   t5.setText(Double.toString(huankuan));
-	                   listModel.addElement("»¹¿î¼ÆËã£º"+Double.toString(huankuan));
+	                   listModel.addElement("è¿˜æ¬¾è®¡ç®—ï¼š"+Double.toString(huankuan));
 	                    t5.setEnabled(true);    
 	                }
 	            }
@@ -166,41 +166,41 @@ class MyFrame extends JFrame {
 	                    index = 0;
 	                    change();
 	                    clear();
-	                    t5.setText("¼ÆËãËùµÃ");
+	                    t5.setText("è®¡ç®—æ‰€å¾—");
 	                    t5.setEnabled(false);
-	                    //System.out.println("¸´Àû¼ÆËã");
+	                    //System.out.println("å¤åˆ©è®¡ç®—");
 	                }else if(c1.getSelectedIndex()==1){
 	                    index = 1;
 	                    change();
 	                    clear();
-	                    t5.setText("¼ÆËãËùµÃ");
+	                    t5.setText("è®¡ç®—æ‰€å¾—");
 	                   t5.setEnabled(false);
-	                    //System.out.println("µ¥Àû¼ÆËã");
+	                    //System.out.println("å•åˆ©è®¡ç®—");
 	                }else if(c1.getSelectedIndex()==2){
 	                    index = 2;
 	                    change01();
 	                    clear();
-	                    t2.setText("¼ÆËãËùµÃ");
+	                    t2.setText("è®¡ç®—æ‰€å¾—");
 	                    t2.setEnabled(false);
-	                    //System.out.println("±¾½ğ¼ÆËã");
+	                    //System.out.println("æœ¬é‡‘è®¡ç®—");
 	                }else if(c1.getSelectedIndex()==3){
 	                    index = 3;
 	                    change01();
 	                    clear();
-	                    t3.setText("¼ÆËãËùµÃ");
+	                    t3.setText("è®¡ç®—æ‰€å¾—");
 	                    t3.setEnabled(false);
-	                    //System.out.println("ÀûÂÊ¼ÆËã");
+	                    //System.out.println("åˆ©ç‡è®¡ç®—");
 	                }else if(c1.getSelectedIndex()==4){
 	                    index = 4;
 	                    change01();
 	                    clear();
-	                    t4.setText("¼ÆËãËùµÃ");
+	                    t4.setText("è®¡ç®—æ‰€å¾—");
 	                    t4.setEnabled(false);
 	                }else if(c1.getSelectedIndex()==5){
 	                    index = 5;
 	                    change02();
 	                    clear();
-	                    t5.setText("¼ÆËãËùµÃ");
+	                    t5.setText("è®¡ç®—æ‰€å¾—");
 	                    t5.setEnabled(false);
 	                }
 	            }
@@ -219,23 +219,23 @@ class MyFrame extends JFrame {
 	     }
 
 	  private void change02() {
-	      l2.setText("´û¿î½ğ¶î£¨Ôª£©£º");
-	      l3.setText("ÄêÀûÂÊ£¨%£©£º");
-	      l4.setText("»¹¿îÆÚÏŞ£¨Äê£©£º");
-	      l5.setText("ÔÂ»¹¿î¶î£¨Ôª£©£º");
+	      l2.setText("è´·æ¬¾é‡‘é¢ï¼ˆå…ƒï¼‰ï¼š");
+	      l3.setText("å¹´åˆ©ç‡ï¼ˆ%ï¼‰ï¼š");
+	      l4.setText("è¿˜æ¬¾æœŸé™ï¼ˆå¹´ï¼‰ï¼š");
+	      l5.setText("æœˆè¿˜æ¬¾é¢ï¼ˆå…ƒï¼‰ï¼š");
 	    }
 	  private void change01() {
-	      l2.setText("±¾½ğ£¨Ôª£©£º");
-	      l3.setText("ÄêÀûÂÊ£¨%£©£º");
-	      l4.setText("ÄêÏŞ£¨Äê£©£º");
-	      l5.setText("ÖÕÖµ£¨Ôª£©£º");
+	      l2.setText("æœ¬é‡‘ï¼ˆå…ƒï¼‰ï¼š");
+	      l3.setText("å¹´åˆ©ç‡ï¼ˆ%ï¼‰ï¼š");
+	      l4.setText("å¹´é™ï¼ˆå¹´ï¼‰ï¼š");
+	      l5.setText("ç»ˆå€¼ï¼ˆå…ƒï¼‰ï¼š");
 	    }
 	  private void change() {
-	      l2.setText("±¾½ğ£¨Ôª£©£º");
-	      l3.setText("ÄêÀûÂÊ£¨%£©£º");
+	      l2.setText("æœ¬é‡‘ï¼ˆå…ƒï¼‰ï¼š");
+	      l3.setText("å¹´åˆ©ç‡ï¼ˆ%ï¼‰ï¼š");
 	      t3.setText("0.03");
-	      l4.setText("ÄêÏŞ£¨Äê£©£º");
-	      l5.setText("ÖÕÖµ£¨Ôª£©£º");
+	      l4.setText("å¹´é™ï¼ˆå¹´ï¼‰ï¼š");
+	      l5.setText("ç»ˆå€¼ï¼ˆå…ƒï¼‰ï¼š");
 	    }
 
 	  private double yuehuankuanejisuan() {
@@ -244,104 +244,104 @@ class MyFrame extends JFrame {
 	            lilv = Double.parseDouble(t3.getText());
 	            nianxian = Double.parseDouble(t4.getText());
 	        } catch (Exception e) {
-	            JOptionPane.showMessageDialog(c, "ÇëÊäÈëÕıÈ·µÄÊı¾İ");
-	            //System.out.println("ÇëÊäÈëÊı¾İ");
+	            JOptionPane.showMessageDialog(c, "è¯·è¾“å…¥æ­£ç¡®çš„æ•°æ®");
+	            //System.out.println("è¯·è¾“å…¥æ•°æ®");
 	        }
 	        return yuehuankuan(daikuan,lilv,nianxian);
 	    }
-	    //ÔÂ»¹¿î¶îµÄ¼ÆËã¹«Ê½
+	    //æœˆè¿˜æ¬¾é¢çš„è®¡ç®—å…¬å¼
 	    public static double yuehuankuan(double daikuan, double lilv, double nianxian) {
 	        huankuan = daikuan * (lilv/12) * Math.pow( 1 + lilv/12 ,12 * nianxian)/(Math.pow(1 + lilv/12, 12 * nianxian)-1);
 	        huankuan = Math.round(huankuan*100)/100;
 	        return huankuan;
 	    }
 	    
-	    //ÄêÏŞ¼ÆËã
+	    //å¹´é™è®¡ç®—
 	    private double nianxiancalcutor() {
 	        try {
 	            zhongzhi = Double.parseDouble(t5.getText());
 	            lilv = Double.parseDouble(t3.getText());
 	            benjin = Double.parseDouble(t2.getText());
 	        } catch (Exception e) {
-	            JOptionPane.showMessageDialog(c, "ÇëÊäÈëÕıÈ·µÄÊı¾İ");
-	            //System.out.println("ÇëÊäÈëÊı¾İ");
+	            JOptionPane.showMessageDialog(c, "è¯·è¾“å…¥æ­£ç¡®çš„æ•°æ®");
+	            //System.out.println("è¯·è¾“å…¥æ•°æ®");
 	        }
 	        return nianxian(zhongzhi,lilv,benjin); 
 	    }
-	    //ÄêÏŞµÄ¼ÆËã¹«Ê½
+	    //å¹´é™çš„è®¡ç®—å…¬å¼
 	    public static double nianxian(double zhongzhi, double lilv, double benjin) {
 	        nianxian = (Math.log(zhongzhi / benjin) / Math.log(1 + lilv));
 	        nianxian = Math.round(nianxian);
 	        return nianxian;
 	    }
 
-	    //ÀûÂÊ¼ÆËã
+	    //åˆ©ç‡è®¡ç®—
 	    private double lilvcalcutor() {
 	        try {
 	            zhongzhi = Double.parseDouble(t5.getText());
 	            nianxian = Double.parseDouble(t4.getText());
 	            benjin = Double.parseDouble(t2.getText());
 	        } catch (Exception e) {
-	            JOptionPane.showMessageDialog(c, "ÇëÊäÈëÕıÈ·µÄÊı¾İ");
-	            //System.out.println("ÇëÊäÈëÊı¾İ");
+	            JOptionPane.showMessageDialog(c, "è¯·è¾“å…¥æ­£ç¡®çš„æ•°æ®");
+	            //System.out.println("è¯·è¾“å…¥æ•°æ®");
 	        }
 	        return lilv(zhongzhi,nianxian,benjin); 
 	    }
-	    //ÀûÂÊµÄ¼ÆËã¹«Ê½
+	    //åˆ©ç‡çš„è®¡ç®—å…¬å¼
 	    public static double lilv(double zhongzhi, double nianxian, double benjin) {
 	        lilv = Math.pow((zhongzhi / benjin), (1.0 / nianxian)) - 1;
 	        lilv = Math.round(lilv*100)/100.0;
 	        return lilv;
 	    }
 	    
-	    //±¾½ğ¼ÆËã
+	    //æœ¬é‡‘è®¡ç®—
 	    private double benjincalcutor() {
 	        try {
 	            zhongzhi = Double.parseDouble(t5.getText());
 	            lilv = Double.parseDouble(t3.getText());
 	            nianxian = Double.parseDouble(t4.getText());
 	        } catch (Exception e) {
-	            JOptionPane.showMessageDialog(c, "ÇëÊäÈëÕıÈ·µÄÊı¾İ");
-	            //System.out.println("ÇëÊäÈëÊı¾İ");
+	            JOptionPane.showMessageDialog(c, "è¯·è¾“å…¥æ­£ç¡®çš„æ•°æ®");
+	            //System.out.println("è¯·è¾“å…¥æ•°æ®");
 	        }
 	        return benjin(zhongzhi,lilv,nianxian);
 	    }
-	    //±¾½ğµÄ¼ÆËã¹«Ê½
+	    //æœ¬é‡‘çš„è®¡ç®—å…¬å¼
 	    public static double benjin(double zhongzhi, double lilv, double nianxian) {
 	        benjin = zhongzhi / (Math.pow(1 + lilv, nianxian));
 	        benjin = Math.round(benjin*100)/100; 
 	        return benjin;
 	    }
 
-	    //µ¥Àû¼ÆËã
+	    //å•åˆ©è®¡ç®—
 	    private double danlicalcutor() {
 	        try {
 	            benjin = Double.parseDouble(t2.getText());
 	            lilv = Double.parseDouble(t3.getText());
 	            nianxian = Double.parseDouble(t4.getText());
 	        } catch (Exception e) {
-	            JOptionPane.showMessageDialog(c, "ÇëÊäÈëÕıÈ·µÄÊı¾İ");
-	            //System.out.println("ÇëÊäÈëÊı¾İ");
+	            JOptionPane.showMessageDialog(c, "è¯·è¾“å…¥æ­£ç¡®çš„æ•°æ®");
+	            //System.out.println("è¯·è¾“å…¥æ•°æ®");
 	        }
 	        return zhongzhi(benjin,lilv,nianxian);
 	        
 	    }
-	    //µ¥ÀûµÄ¼ÆËã¹«Ê½
+	    //å•åˆ©çš„è®¡ç®—å…¬å¼
 	    public static double zhongzhi(double benjin, double lilv, double nianxian) {
 	        zhongzhi = benjin * (1 + lilv * nianxian);
 	        zhongzhi = Math.round(zhongzhi*100)/100; 
 	        return zhongzhi;
 	    }
 
-	    //¸´Àû¼ÆËã
+	    //å¤åˆ©è®¡ç®—
 	    private double fulicalcutor() {
 	        try {
 	            benjin = Double.parseDouble(t2.getText());
 	            lilv = Double.parseDouble(t3.getText());
 	            nianxian = Double.parseDouble(t4.getText());
 	        } catch (Exception e) {
-	            JOptionPane.showMessageDialog(c, "ÇëÊäÈëÕıÈ·µÄÊı¾İ");
-	            //System.out.println("ÇëÊäÈëÊı¾İ");
+	            JOptionPane.showMessageDialog(c, "è¯·è¾“å…¥æ­£ç¡®çš„æ•°æ®");
+	            //System.out.println("è¯·è¾“å…¥æ•°æ®");
 	        }
 	        try {
 	            dingtou = Double.parseDouble(t5.getText());
@@ -350,7 +350,7 @@ class MyFrame extends JFrame {
 	        }
 	        return zhongzhi(benjin,lilv,nianxian,dingtou);
 	    }
-	    //¸´ÀûµÄ¼ÆËã¹«Ê½
+	    //å¤åˆ©çš„è®¡ç®—å…¬å¼
 	    public static double zhongzhi(double benjin, double lilv, double nianxian,
 	            double dingtou) {
 	        for(int i = 0;i < nianxian;i++){
